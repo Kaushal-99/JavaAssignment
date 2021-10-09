@@ -21,12 +21,8 @@ public class LoginController {
 //	@PostMapping(value = "/login")
 	@ResponseBody
 	public String loginUser(HttpServletRequest request, @RequestParam String username, @RequestParam String password) {
-
-		
-		
 		String result=loginDao.loginUser(username, password);
 		return result;
-		
 	}
 
 //	@RequestMapping(value = "/logout")
